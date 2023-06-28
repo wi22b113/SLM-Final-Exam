@@ -15,6 +15,7 @@ class FactorialControllerTest {
 
 
         //Act
+        FactorialController.t.setTotal(0);
         int result = (int) FactorialController.getTotal();
 
         //Assert
@@ -24,6 +25,7 @@ class FactorialControllerTest {
     @Test
     void calcFactorial(){
         //Arrange
+
         int number = 5;
 
         //Act
@@ -31,6 +33,7 @@ class FactorialControllerTest {
 
         //Assert
         assertEquals(result,120);
+
     }
 
 

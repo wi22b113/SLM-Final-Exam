@@ -11,5 +11,6 @@ public class Total {
     public int setTotal(int total){
         this.total = total;
         return total;
+
     }
 }
