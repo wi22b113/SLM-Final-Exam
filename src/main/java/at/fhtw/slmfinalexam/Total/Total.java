@@ -2,13 +2,15 @@ package at.fhtw.slmfinalexam.Total;
 
 public class Total {
 
-    private long total = 0;
+    private int total = 0;
 
-    public long getTotal(){
+    public int getTotal(){
         return total;
     }
 
-    public void setTotal(long total){
+    public int setTotal(int total){
         this.total = total;
+        return total;
+
     }
 }

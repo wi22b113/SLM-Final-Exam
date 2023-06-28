@@ -10,14 +10,31 @@ class FactorialControllerTest {
     @Test
     void getTotal() {
         //Arrange
-        Total testTotal = new Total();
-        long expected = 2345;
+        FactorialController.t.setTotal(0);
+        int expected = FactorialController.t.getTotal();
 
 
         //Act
-        long result = FactorialController.calculateTotal(expected);
+
+        int result = (int) FactorialController.getTotal();
 
         //Assert
         assertEquals(expected,result);
     }
+
+    @Test
+    void calcFactorial(){
+        //Arrange
+
+        int number = 5;
+
+        //Act
+        int result = FactorialController.calcFactorial(number);
+
+        //Assert
+        assertEquals(result,120);
+
+    }
+
+
 }
