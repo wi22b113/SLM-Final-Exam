@@ -10,12 +10,12 @@ class FactorialControllerTest {
     @Test
     void getTotal() {
         //Arrange
-        Total testTotal = new Total();
-        int expected = testTotal.getTotal();
+        FactorialController.t.setTotal(0);
+        int expected = FactorialController.t.getTotal();
 
 
         //Act
-        FactorialController.t.setTotal(0);
+
         int result = (int) FactorialController.getTotal();
 
         //Assert
